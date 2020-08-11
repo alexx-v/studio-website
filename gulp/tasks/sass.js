@@ -11,5 +11,6 @@ module.exports = function () {
 			.pipe($.gp.sourcemaps.write(''))
 			.pipe($.gulp.dest('build/css'))
 			.pipe($.browserSync.stream());
+		// .pipe($.browserSync.stream());
 	});
 };
