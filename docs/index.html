@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -7,10 +8,63 @@
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
   <script src="js/all.min.js"></script>
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
+    <header class="header">
 
-</div>
+      <div class="header__left">
+        <img class="header__logo" src="/img/logo.png" srcset="/img/logo.png 1x,
+              /img/logo-2x.png 2x" alt="Logo">
+        <p class="header__slogan">Associates<br> studio<br> design</p>
+
+        <ul class="header__socials socials">
+          <li class="socials__element">
+            <a class="socials__link" aria-label="We on facebook" href="#">
+              <svg class="socials__facebook">
+                <use xlink:href="/img/symbol/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="We on twitter" href="#">
+              <svg class="socials__twitter">
+                <use xlink:href="/img/symbol/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="We on linkedin" href="#">
+              <svg class="socials__linkedin">
+                <use xlink:href="/img/symbol/sprite.svg#linked"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__element">
+            <a class="socials__link" aria-label="We on google plus" href="#">
+              <svg class="socials__google">
+                <use xlink:href="/img/symbol/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="header__right">
+        <p class="header__address">90802 California<br> Long beach<br> PO Box 67853<br> 200 East Ocean<br> Boulevard
+        </p>
+        <p class="header__contacts">
+          <a href="tel:+6456773555" class="header__tel">+64 5 677 3555</a>
+          <br>
+          <a href="mailto:info@dg-studio.com" class="header__mail">info@dg-studio.com</a>
+        </p>
+      </div>
+
+    </header>
+
+
+  </div>
 </body>
-</html>
 
+</html>
