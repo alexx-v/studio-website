@@ -6,7 +6,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>DSGN</title>
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
-  <script src="js/all.min.js"></script>
+  <script defer src="js/all.min.js"></script>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
     <header class="header">
 
       <div class="header__left">
-        <img class="header__logo" src="/img/logo.png" srcset="/img/logo.png 1x,
-              /img/logo-2x.png 2x" alt="Logo">
+        <img class="header__logo" src="../img/logo.png" srcset="../img/logo.png 1x,
+              ../img/logo-2x.png 2x" alt="Logo">
         <p class="header__slogan">Associates<br> studio<br> design</p>
 
         <ul class="header__socials socials">
@@ -81,6 +81,9 @@
           <a href="#" class="menu__link">Contact</a>
         </li>
       </ul>
+      <button class="menu__hamburger hamburger" aria-label="Menu button">
+        <span class="hamburger__element"></span>
+      </button>
     </nav>
 
 
