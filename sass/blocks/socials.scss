@@ -19,10 +19,22 @@
 	fill: $second;
 }
 
+.socials__facebook-mini {
+	width: 6px;
+	height: 13px;
+	fill: $red;
+}
+
 .socials__twitter {
 	width: 26px;
 	height: 21px;
 	fill: $second;
+}
+
+.socials__twitter-mini {
+	width: 13px;
+	height: 10px;
+	fill: $red;
 }
 
 .socials__linkedin {
@@ -31,8 +43,20 @@
 	fill: $second;
 }
 
+.socials__linkedin-mini {
+	width: 13px;
+	height: 12px;
+	fill: $red;
+}
+
 .socials__google {
 	width: 19px;
 	height: 19px;
 	fill: $second;
+}
+
+.socials__google-mini {
+	width: 14px;
+	height: 13px;
+	fill: $red;
 }
