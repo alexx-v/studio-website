@@ -12,7 +12,9 @@
 		transition-property: fill;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
+		outline: none;
 		svg {
 			fill: $red;
 		}

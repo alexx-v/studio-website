@@ -69,7 +69,9 @@
 		transition-property: border-color;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
+		outline: none;
 		span {
 			border-bottom-color: $red;
 		}

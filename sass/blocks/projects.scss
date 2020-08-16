@@ -15,18 +15,19 @@ $bgNine: #cecece;
 	grid-row: span 2;
 	background-color: $third;
 	position: relative;
+	background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
 
-	&::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
-	}
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	right: 0;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
+	// }
 
 	.projects__title {
 		font-size: 48px;
@@ -303,17 +304,19 @@ $bgNine: #cecece;
 	background-color: $third;
 	position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="65%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
-	}
+	background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="65%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
+
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	right: 0;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="65%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1" /></svg> ');
+	// }
 
 	.projects__links {
 		position: relative;
@@ -378,7 +381,7 @@ $bgNine: #cecece;
 	font-family: 'roboto_condensedlight';
 	color: $colorText;
 	text-transform: uppercase;
-	line-height: 1;
+	line-height: 1.2;
 	display: inline-block;
 	background: url('../img/arrow-view.svg') left center no-repeat;
 	padding-left: 25px;
@@ -390,14 +393,18 @@ $bgNine: #cecece;
 	}
 
 	span {
-		border: 1px solid transparent;
-		transition-property: border-bottom-color;
+		// border: 1px solid transparent;
+		// transition-property: border-bottom-color;
+		transition-property: color;
 		transition-duration: 500ms;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
+		outline: none;
 		span {
-			border-bottom-color: $colorText;
+			// border-bottom-color: $colorText;
+			color: $activeColor;
 		}
 	}
 }

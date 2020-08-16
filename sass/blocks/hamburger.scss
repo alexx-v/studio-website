@@ -12,7 +12,6 @@ $hamburgerColor: #e9eae2;
 	&:active,
 	&:focus {
 		border-color: $activeColor;
-		outline-color: $activeColor;
 
 		.hamburger__element {
 			background-color: $activeColor;
@@ -22,6 +21,10 @@ $hamburgerColor: #e9eae2;
 				background-color: $activeColor;
 			}
 		}
+	}
+
+	&:focus {
+		outline-color: $activeColor;
 	}
 }
 
