@@ -39,7 +39,7 @@ $bgStudio: #ff8b6d;
 	text-transform: uppercase;
 	line-height: 1;
 	font-weight: normal;
-	margin: 62.3% 0 35.4% 46.2%;
+	margin: 75.3% 0 35.4% 46.2%;
 
 	@media (min-width: 1500px) {
 		@include dynamicText(300%, 96, 48, 1500px, 3000, 1500);
@@ -170,6 +170,12 @@ $bgStudio: #ff8b6d;
 	.studio__right,
 	.studio__persons {
 		padding-right: 2%;
+	}
+}
+
+@media (max-width: 1240px) {
+	.studio__title {
+		font-size: 36px;
 	}
 }
 

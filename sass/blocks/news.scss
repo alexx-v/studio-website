@@ -133,6 +133,12 @@ $colorSub: #6a6969;
 	}
 }
 
+@media (max-width: 1240px) {
+	.news__title {
+		font-size: 36px;
+	}
+}
+
 @media (max-width: 980px) {
 	.news__left {
 		grid-column: span 16;
